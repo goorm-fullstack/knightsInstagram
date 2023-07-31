@@ -1,14 +1,17 @@
 # 구름기사단: 인스타그램 클론코딩
-☁ 구름(goorm) 풀스택 개발자 성장 과정 2차 스터디 5조 구름기사단의 구름PBL 과제: [인스타그램](https://www.instagram.com/) 클론코딩입니다.
+☁ 구름(goorm) 풀스택 개발자 성장 과정 2차 스터디 **5조 구름기사단**의 구름PBL 과제: **[인스타그램](https://www.instagram.com/) 클론코딩**입니다.
+
+<br>
 
 > **구름PBL이란?** 전통적인 수동적 수업 방식을 벗이나 학습자가 학습의 주체가 되어 능동적인 학습 활동을 할 수 있도록 설계된 수업을 말하는 것으로 기존의 Problem Based Learning뿐 아니라 Project Based Learning, Problem Based Learning, (Sequential) Progress Based Learning의 의미를 포함하고 있습니다.
 
 <br>
 
-## 📃 프로젝트 개요
-- 과제 주제: [인스타그램](https://www.instagram.com/) 클론코딩
-- 과제 기간: 2023.07.31 ~ 2023.08.13(총 14일)
-- 과제 목표: 추가 예정
+## 📌 프로젝트 개요
+
+- **과제 주제:** [인스타그램](https://www.instagram.com/) 클론코딩
+- **과제 기간:** 2023.07.31 ~ 2023.08.13(총 14일)
+- **과제 목표:** 추가 예정
 
 <br>
 
