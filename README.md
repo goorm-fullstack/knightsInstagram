@@ -3,7 +3,7 @@
 
 <br>
 
-> **구름PBL이란?** 전통적인 수동적 수업 방식을 벗이나 학습자가 학습의 주체가 되어 능동적인 학습 활동을 할 수 있도록 설계된 수업을 말하는 것으로 기존의 Problem Based Learning뿐 아니라 Project Based Learning, Problem Based Learning, (Sequential) Progress Based Learning의 의미를 포함하고 있습니다.
+> **구름PBL이란?** 전통적인 수동적 수업 방식을 벗이나 학습자가 학습의 주체가 되어 능동적인 학습 활동을 할 수 있도록 설계된 수업을 말하는 것으로 기존의 Problem Based Learning에 Project Based Learning, (Sequential) Progress Based Learning의 의미를 포함하고 있습니다.
 
 <br>
 
@@ -68,7 +68,7 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 
 ### Back-End
-<img src="https://img.shields.io/badge/java 17-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring 3.1.0-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
 
 ### DB
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
