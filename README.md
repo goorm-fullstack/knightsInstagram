@@ -11,10 +11,7 @@
 
 - **과제 주제:** [인스타그램](https://www.instagram.com/) 클론코딩
 - **과제 기간:** 2023.07.31 ~ 2023.08.13(총 14일)
-  + **개발 기간:** 2023.08.07 ~ 2023.08.11(총 5일)
-- **과제 목표** 
-  + GitHub를 사용하여 팀 프로젝트 하는 법 익히기
-  + 기간 내에 완성하는 연습하기
+- **과제 목표:** 추가 예정
 
 <br>
 
@@ -28,40 +25,40 @@
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/121299334?v=4" width="70"></td>
-    <td>문소희(<a href="https://github.com/soheetech" target="_blank">@soheetech</a>)<br>Back-End 구현</td>
+    <td>문소희(<a href="https://github.com/soheetech" target="_blank">@soheetech</a>)</td>
     <td align="center">조장</td>
-    <td>DB 연결 및 초기 환경 세팅, 댓글(+댓글의 댓글) CRUD, 댓글 좋아요 기능 구현</td>
+    <td>추가 예정</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/58635833?v=4" width="70"></td>
-    <td>박지국(<a href="https://github.com/parkjikuk" target="_blank">@parkjikuk</a>)<br>Front-End 구현</td>
+    <td>박지국(<a href="https://github.com/parkjikuk" target="_blank">@parkjikuk</a>)</td>
     <td align="center">조원</td>
-    <td>Index(홈&추천피드) 페이지, 개인 피드 페이지(목록/작성/수정/삭제) 구현</td>
+    <td>추가 예정</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/62269067?v=4" width="70"></td>
-    <td>이동규(<a href="https://github.com/LEE-Donggyu" target="_blank">@LEE-Donggyu</a>)<br>Back-End 구현</td>
+    <td>이동규(<a href="https://github.com/LEE-Donggyu" target="_blank">@LEE-Donggyu</a>)</td>
     <td align="center">조원</td>
-    <td>개인 피드 CRUD, 추천 피드 조회, 피드 게시물 좋아요, 검색 기능 구현</td>
+    <td>추가 예정</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/50459192?v=4" width="70"></td>
-    <td>전민종(<a href="https://github.com/yss1902" target="_blank">@yss1902</a>)<br>Back-End 구현</td>
+    <td>전민종(<a href="https://github.com/yss1902" target="_blank">@yss1902</a>)</td>
     <td align="center">조원</td>
-    <td>회원가입, 회원 정보수정, 회원탈퇴, 로그인 기능 구현</td>
+    <td>추가 예정</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/54804220?v=4" width="70"></td>
-    <td>한세라(<a href="https://github.com/hansera" target="_blank">@hansera</a>)<br>Front-End 구현</td>
+    <td>한세라(<a href="https://github.com/hansera" target="_blank">@hansera</a>)</td>
     <td align="center">조원</td>
-    <td>회원가입, 회원 정보수정, 로그인 페이지 구현</td>
+    <td>추가 예정</td>
   </tr>
 </table>
 
 <br>
 
 ## 🔍 서비스 분석
-![serviceflow](https://github.com/goorm-fullstack/knightsInstagram/assets/121299334/a2d66927-a716-4596-9b37-fff8bba0d031)
+추가 예정: 플로우차트
 
 <br>
 
@@ -91,22 +88,4 @@
 
 ## 📚 회고록
 
-- 좋았어요(Keep)
-  + `문소희`: 
-  + `박지국`: 
-  + `이동규`: 
-  + `전민종`: 
-  + `한세라`: 
-- 겪은문제(Problem)
-  + `문소희`: 
-  + `박지국`: 
-  + `이동규`: 
-  + `전민종`: 
-  + `한세라`: 
-- 해결방법(Try)
-  + `문소희`: 
-  + `박지국`: 
-  + `이동규`: 
-  + `전민종`: 
-  + `한세라`: 
-
+- 추가 예정
