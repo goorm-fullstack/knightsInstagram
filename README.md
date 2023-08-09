@@ -42,7 +42,7 @@
     <td align="center"><img src="https://avatars.githubusercontent.com/u/62269067?v=4" width="70"></td>
     <td>이동규(<a href="https://github.com/LEE-Donggyu" target="_blank">@LEE-Donggyu</a>)<br>Back-End 구현</td>
     <td align="center">조원</td>
-    <td>개인 피드 CRUD, 추천 피드 조회, 피드 게시물 좋아요, 검색 기능 구현</td>
+    <td>개인 피드 CRUD, 추천 피드 조회, 게시물 좋아요 기능 구현</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/50459192?v=4" width="70"></td>
@@ -97,7 +97,7 @@
   + `이동규`: 
   + `전민종`: 
   + `한세라`: 
-- 겪은문제(Problem)
+- 발생문제(Problem)
   + `문소희`: 
   + `박지국`: 
   + `이동규`: 
