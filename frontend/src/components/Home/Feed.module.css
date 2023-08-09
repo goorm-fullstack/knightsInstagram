@@ -1,0 +1,11 @@
+.feed {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.post {
+    margin-right: 50px;
+}
+

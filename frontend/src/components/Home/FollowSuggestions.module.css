@@ -1,0 +1,10 @@
+.recommendations {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    color: gray;
+}

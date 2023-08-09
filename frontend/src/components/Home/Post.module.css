@@ -1,0 +1,85 @@
+.post {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.profileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.postHeader {
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+}
+
+.followBtn {
+    font-weight: bold;
+    color : #0D9CF7;
+}
+
+.postImg {
+    object-fit: cover;
+    width: 100%;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.buttons {
+    display: flex;
+    font-size: 25px;
+}
+
+.buttons > * + * {
+    margin-left: 16px; 
+  }
+
+
+.postInfo {
+    padding: 5px 0;
+}
+
+.postUser {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.commentInput {
+    flex: 1;
+}
+
+.commentBtn {
+    color: rgb(0, 149, 246);
+    font-weight: bold;
+    font-size: medium;
+    background-color: white;
+    margin: 0 8px;
+}

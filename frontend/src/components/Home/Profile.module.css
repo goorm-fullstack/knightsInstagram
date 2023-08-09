@@ -1,0 +1,27 @@
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 10px 0;
+    padding-top: 30px;
+}
+
+.profileImg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.profileIntro {
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+}
+
+.transition {
+    color: #0D9CF7;
+    cursor: pointer;
+}
