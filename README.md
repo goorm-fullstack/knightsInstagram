@@ -28,9 +28,9 @@
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/121299334?v=4" width="70"></td>
-    <td>문소희(<a href="https://github.com/soheetech" target="_blank">@soheetech</a>)<br>Back-End 구현</td>
-    <td align="center">조장</td>
-    <td>DB 연결 및 초기 환경 세팅, 댓글(+댓글의 댓글) CRUD, 댓글 좋아요 기능 구현</td>
+    <td width="190">문소희(<a href="https://github.com/soheetech" target="_blank">@soheetech</a>)<br>Back-End 구현</td>
+    <td width="60" align="center">조장</td>
+    <td>DB 연결 및 초기 환경 세팅, 댓글(+댓글의 댓글) 작성/조회/삭제, 댓글 좋아요 기능 구현</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/58635833?v=4" width="70"></td>
