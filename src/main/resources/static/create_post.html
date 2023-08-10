@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Post</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const createPostButton = document.getElementById("createPostButton");
+            createPostButton.addEventListener("click", function () {
+                const id = document.getElementById("id").value;
+                const postdetail = document.getElementById("postdetail").value;
+                const postimage = document.getElementById("postimage").value;
+
+                const data = {
+                    id: id,
+                    postdetail: postdetail,
+                    postimage: postimage
+                };
+
+                fetch("/post/createPost", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(response => {
+                    if (response.ok) {
+                        // 게시물 생성 성공 시 수행할 동작
+                        alert("Post created successfully!");
+                        location.reload(); // 페이지 새로고침
+                    } else {
+                        alert("Failed to create post.");
+                    }
+                }).catch(error => {
+                    console.error("Error:", error);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Create a New Post</h1>
+<form action="/post/createPost" method="post" id="createPostForm">
+    <label for="id">User ID:</label><br>
+    <input type="text" id="id" name="id"><br><br>
+
+    <label for="postdetail">Post Detail:</label><br>
+    <textarea id="postdetail" name="postdetail" rows="4" cols="50"></textarea><br><br>
+
+    <label for="postimage">Post Image:</label><br>
+    <input type="text" id="postimage" name="postimage"><br><br>
+
+    <button type="button" id="createPostButton">Create Post</button>
+</form>
+</body>
+</html>
