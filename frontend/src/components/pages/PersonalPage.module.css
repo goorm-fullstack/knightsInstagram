@@ -76,6 +76,23 @@
 .user_actions a:not(:last-child) {
     margin-right: 60px;
 }
+
+.feed_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.feed_image {
+    height: 309px; 
+    width: 309px;
+}
+
+.feed_container img {
+    max-width: 100%; 
+    width: 100%;
+    height: 100%;
+}
   
   
 

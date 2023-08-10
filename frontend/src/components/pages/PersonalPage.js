@@ -43,6 +43,13 @@ export const PersonalPage = () => {
               <a>저장됨</a>
               <a>태그됨</a>
             </div>
+
+            <div className={styles.feed_container}>
+              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="고양이" /></div>
+              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="강아지" /></div>
+              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="사자" /></div>
+              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="사자" /></div>
+            </div>
         </section>
     </div>
   )
