@@ -1,7 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import "./Profile.css"
+import EditForm from "./EditForm";
+import ProfileImageUploader from './ProfileImageUploader';
 
-function Profile() {
+function Profile () {
+
   return (
     <div className="profile_container">
     <section className="container">
@@ -99,20 +102,98 @@ function Profile() {
              </div>
               <hr class="line"></hr>
             </div>
-            <li>프로필 편집</li>
-            <li>앱 및 웹사이트</li>
-            <li>이메일 알림</li>
-            <li>푸시 알림</li>
-            <li>내가 볼 수 있는 내용</li>
-            <li>내 콘텐츠를 볼 수 있는 사람</li>
-            <li>다른 사람이 나와 소통할 수 있는 방법</li>
-            <li>관리 감독</li>
-            <li>도움말</li>
-            <li>프로페셔널 계정으로 전환</li>
+            <li>
+               <a class="menu1" href="/accounts/edit/" role="link">
+                <div>
+                  <div class="_ad7z">
+                   <span class="menu2" dir="auto">프로필 편집</span>
+                  </div>
+                </div>
+                </a>
+            </li>
+            <li>
+               <a class="menu1" href="/accounts/edit/" role="link">
+                <div>
+                  <div class="_ad7z">
+                   <span class="menu2" dir="auto">앱 및 웹 사이트</span>
+                  </div>
+                </div>
+                </a>
+            </li>
+            <li>
+            <a class="menu1" href="/accounts/edit/" role="link">
+             <div>
+               <div class="_ad7z">
+                <span class="menu2" dir="auto">이메일 알림</span>
+               </div>
+             </div>
+             </a>
+            </li>
+            <li>
+         <a class="menu1" href="/accounts/edit/" role="link">
+          <div>
+            <div class="_ad7z">
+             <span class="menu2" dir="auto">푸시 알림</span>
+            </div>
+          </div>
+          </a>
+            </li>
+            <li>
+             <a class="menu1" href="/accounts/edit/" role="link">
+              <div>
+               <div class="_ad7z">
+                <span class="menu2" dir="auto">내가 볼 수 있는 내용</span>
+              </div>
+              </div>
+              </a>
+            </li>
+            <li>
+            <a class="menu1" href="/accounts/edit/" role="link">
+             <div>
+              <div class="_ad7z">
+               <span class="menu2" dir="auto">내 콘텐츠를 볼 수 있는 사람</span>
+             </div>
+             </div>
+             </a>
+           </li>
+           <li>
+           <a class="menu1" href="/accounts/edit/" role="link">
+            <div>
+             <div class="_ad7z">
+              <span class="menu2" dir="auto">다른 사람이 나와 소통할 수 있는 방법</span>
+            </div>
+            </div>
+            </a>
+          </li>
+          <li>
+          <a class="menu1" href="/accounts/edit/" role="link">
+           <div>
+            <div class="_ad7z">
+             <span class="menu2" dir="auto">관리 감독</span>
+           </div>
+           </div>
+           </a>
+         </li>
+         <li>
+         <a class="menu1" href="/accounts/edit/" role="link">
+          <div>
+           <div class="_ad7z">
+            <span class="menu2" dir="auto">도움말</span>
+          </div>
+          </div>
+          </a>
+         </li>  
+         <li>
+         <a class="menu1" href="/accounts/edit/" role="link">
+          <div>
+           <div class="_ad7z">
+            <span class="menu2" dir="auto">프로페셔널 계정으로 전환</span>
+          </div>
+          </div>
+          </a>
+         </li> 
           </ul>
-          <article class="right">
-           <div class=""></div>
-          </article>
+          <EditForm />
         </div>
       </main>
     </section>
@@ -121,9 +202,3 @@ function Profile() {
 }
 
 export default Profile;
-
-
-
-
-
-

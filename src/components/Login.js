@@ -2,27 +2,104 @@ import React from 'react'
 import "./Login.css"
 
 function Login() {
+
+  const backgroundImageUrl = "https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png";
+
   return (
     <div className="login_form">
+     <div className="_ab1y">
+      <div className="login">
 
-     <div className="login">
-        <img src="/img/signup_logo.png" alt="" />
-          <input type="email" placeholder='전화번호, 사용자 이름 또는 이메일' />
-          <input type="password" placeholder='비밀번호' />
-          <button>로그인</button>
+     {/*인스타그램 로고*/}
+      <div className="img">
+        <i
+          data-visualcompletion="css-img"
+          aria-label="Instagram"
+          className=""
+          role="img"
+          style={{
+           backgroundImage: `url(${backgroundImageUrl})`,
+           backgroundPosition: "0px -52px",
+           backgroundSize: "auto",
+           width: "175px",
+           height: "51px",
+           backgroundRepeat: "no-repeat",
+           display: "inline-block"
+            }}
+          > </i>
       </div>
 
-      <div className="facebook_login">
-        <div>
-          <span>----또는----</span>
-        </div>
-        <div>
-          <a className="facebook_click" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%252210qfeyc6yj60r1n7lk1uj5q35c1xtf7y41rp9kn819hivaw1br856x%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252Fhsr10135%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D78ccd7b2-5634-4970-98bc-5bcbf0e6645e%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252210qfeyc6yj60r1n7lk1uj5q35c1xtf7y41rp9kn819hivaw1br856x%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252Fhsr10135%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" role="link" tabindex="0">Facebook으로 로그인</a>
-          </div>
-     <div>
-        <a className="forget_password" href="https://www.instagram.com/accounts/password/reset/?next=%2Fhsr10135%2F" role="link" tabindex="0">비밀번호를 잊으셨나요?</a>
+     {/*아이디, 비밀번호 입력*/}
+      <div className="_ab3a">
+        <form className="form" id="loginForm" method="post">
+          <div className="input_form">
+            <div className="_ab32">
+             <div className="id">
+              <label calss="_aa48">
+               {/*<span className='_aa4a'>전화번호, 사용자 이름 또는 이메일</span>*/}
+               <input
+               aria-label="전화번호, 사용자 이름 또는 이메일"
+               aria-required="true"
+               autoCapitalize="none"
+               autoCorrect="off"
+               maxLength="75"
+               className="id_form"
+               dir=""
+               type="email"
+              //  value=""
+               name="username"
+               placeholder='전화번호, 사용자 이름 또는 이메일'
+             />
+            </label>
+             </div>
+            </div>
+            <div className="_ab32">
+             <div className="id">
+              <label calss="_aa48">
+               {/*<span className='_aa4a'>비밀번호</span>*/}
+               <input
+                aria-label="비밀번호"
+                aria-required="true"
+                autoCapitalize="none"
+                autoCorrect="off"
+                className="id_form"
+                type="password"
+                // value=""
+                name="password"
+                placeholder='비밀번호'
+              />
+            </label>
+             </div>
+            </div>
+             {/*로그인 버튼*/}
+            <div class="login_btn">
+             <button class="btn" disabled="" type="submit">
+             <div class="btn_1">로그인</div>
+              </button>
+            </div>
+            {/*중간선*/}
+            <div class="_ab39">
+               <div class="line_1">
+                <div class="line_2"></div>
+                  <div class="line_3">또는</div>
+                <div class="line_2"></div>
+                </div>
+            </div>
+            <div class="facebook">
+              <button class="facebook_btn" type="button">
+                <span class="facebook_span"></span>
+                <span class="_ab37">Facebook으로 로그인</span>
+              </button>
+            </div>
+       </div>
+       <a className="forget_password"
+          href="" 
+          role="link" 
+          tabIndex="0">비밀번호를 잊으셨나요?</a>
+      </form>
+      </div>
      </div>
-   </div>
+    </div>
    </div>
   );
 }
