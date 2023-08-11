@@ -11,14 +11,18 @@ import java.util.List;
 @Service
 public class FirebaseServiceImpl implements FirebaseService{
     public static final String COLLECTION_NAME = "Users";
+
+    // 회원 추가 로직
     @Override
-    public String insertUser(User user) throws Exception{
+    public String insertUser(User user) throws Exception {
         Firestore firestore = FirestoreClient.getFirestore();
         ApiFuture<WriteResult> apiFuture =
-                firestore.collection(COLLECTION_NAME).document(user.getId()).set(user);
+                firestore.collection(COLLECTION_NAME).document(user.getEmail()).set(user);
         return apiFuture.get().getUpdateTime().toString();
     }
 
+
+    // 로그인 로직
     @Override
     public User loginUser(String email, String password) throws Exception {
         Firestore firestore = FirestoreClient.getFirestore();
@@ -35,38 +39,30 @@ public class FirebaseServiceImpl implements FirebaseService{
         return user;
     }
 
-
-
+    // 회원 삭제 로직
     @Override
-    public User getUserDetail(String id) throws Exception {
+    public String deleteUser(String email) throws Exception {
         Firestore firestore = FirestoreClient.getFirestore();
-        DocumentReference documentReference =
-                firestore.collection(COLLECTION_NAME).document(id);
-        ApiFuture<DocumentSnapshot> apiFuture = documentReference.get();
-        DocumentSnapshot documentSnapshot = apiFuture.get();
-        User user = null;
-        if(documentSnapshot.exists()){
-            user = documentSnapshot.toObject(User.class);
-            return user;
-        }
-        else{
-            return null;
+        Query query = firestore.collection("Users").whereEqualTo("email", email);
+        ApiFuture<QuerySnapshot> querySnapshot = query.get();
+        List<QueryDocumentSnapshot> documents = querySnapshot.get().getDocuments();
+
+        if (!documents.isEmpty()) {
+            String documentId = documents.get(0).getId();
+            firestore.collection("Users").document(documentId).delete();
+            return "Document email: " + email + " delete";
+        } else {
+            return "No document found with email: " + email;
         }
     }
 
+    // 회원 정보수정
     @Override
     public String updateUser(User user) throws Exception {
         Firestore firestore = FirestoreClient.getFirestore();
         ApiFuture<com.google.cloud.firestore.WriteResult> apiFuture
-                = firestore.collection(COLLECTION_NAME).document(user.getId()).set(user);
+                = firestore.collection(COLLECTION_NAME).document(user.getEmail()).set(user);
         return apiFuture.get().getUpdateTime().toString();
     }
 
-    @Override
-    public String deleteUser(String id) throws Exception {
-        Firestore firestore = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> apiFuture
-                = firestore.collection(COLLECTION_NAME).document(id).delete();
-        return "Document id: "+id+" delete";
-    }
 }

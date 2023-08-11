@@ -20,7 +20,7 @@ const SignIn = () => {
             const response = await axios.post("http://localhost:8080/login", credentials);
             if (response.data) {
                 console.log("User logged in:", response.data);
-                navigate('/Home');
+                navigate('/home');
             } else {
                 console.error("Login failed!");
             }

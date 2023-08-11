@@ -20,7 +20,6 @@ const SignUp = () => {
         try {
             const response = await axios.post("http://localhost:8080/insertUser", user);
             console.log("User created:", response.data);
-            // 여기에 회원가입 완료 후의 로직을 추가할 수 있습니다.
         } catch (error) {
             console.error("An error occurred:", error);
         }
