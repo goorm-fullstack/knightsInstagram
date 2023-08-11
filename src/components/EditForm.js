@@ -76,7 +76,21 @@ const EditForm = () => {
        <aside class="_ad6_">
         <label class="_ab3q" for="pepLinks">웹사이트</label>
        </aside>
-      </div>
+       <div className="_ab3t">
+        <div div style={{ maxWidth: '355px', width: '100%' }} className="xjbqb8w">
+            <input
+            aria-required="false"
+            disabled
+            id="pepLinks"
+            placeholder="웹사이트"
+            className="_ab3_"
+            dir=""
+            type="text"
+            value=""
+          />
+        </div>
+       </div>
+       </div>
      </form>
     </article>
     );

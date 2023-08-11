@@ -282,3 +282,42 @@ color: rgb(0, 149, 246);
   font-weight: 600;
   vertical-align: baseline;
 }
+
+._ab3t{
+
+}
+
+.xjbqb8w{
+  box-sizing: border-box;
+  background-color: transparent;
+  display: inline-block;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+  overflow-x: visible;
+  overflow-y: visible;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: stretch;
+  align-self: auto;
+  justify-content: flex-start;
+}
+
+._ab3_{
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid rgb(var(--ig-stroke));
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(var(--ig-primary-text));
+  flex: 0 1 355px;
+  font-size: 16px;
+  height: 32px;
+  padding: 0 10px;
+  width: 100%;
+  text-align: left;
+}
