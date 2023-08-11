@@ -25,7 +25,6 @@ public class Post {
     private String postimage;       //사진
     private int postlike;           //좋아요
 
-    private Date create_dt;         //작성일
-    private Date update_dt;         //업뎃일
+    private String create_dt;         //작성일
 
 }

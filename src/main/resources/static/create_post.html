@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Post</title>
     <script>
+
+
+
         document.addEventListener("DOMContentLoaded", function () {
             const createPostButton = document.getElementById("createPostButton");
             createPostButton.addEventListener("click", function () {
@@ -10,10 +16,31 @@
                 const postdetail = document.getElementById("postdetail").value;
                 const postimage = document.getElementById("postimage").value;
 
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = today.getMonth() + 1;
+                const date = today.getDate();
+                const day1 = today.getDay();
+                let hrs = today.getHours();
+                let mins = today.getMinutes();
+                let period = "AM";
+                if (hrs === 0) {
+                    hrs = 12;
+                }
+                else if (hrs > 12) {
+                    hrs = hrs - 12;
+                    period = "PM";
+                }
+                hrs = (hrs < 10) ? "0" + hrs : hrs;
+                mins = (mins < 10) ? "0" + mins : mins;
+
+                const create_dt = `${year} ${month} ${date} ${hrs} ${mins} ${period}`;
+
                 const data = {
                     id: id,
                     postdetail: postdetail,
-                    postimage: postimage
+                    postimage: postimage,
+                    create_dt: create_dt
                 };
 
                 fetch("/post/createPost", {
