@@ -13,8 +13,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 @Slf4j
-//@Controller
-@RestController
+@Controller
 @RequiredArgsConstructor
 @RequestMapping("/comment")
 public class CommentController {
@@ -30,12 +29,12 @@ public class CommentController {
      * @throws InterruptedException
      */
     @GetMapping
-//    public String comments(Model model) throws ExecutionException, InterruptedException {
-    public ResponseEntity<Object> comments(Model model) throws ExecutionException, InterruptedException {
+    public String comments(Model model) throws ExecutionException, InterruptedException {
+//    public ResponseEntity<Object> comments(Model model) throws ExecutionException, InterruptedException {
         List<Comment> comments = commentService.getAllComments();
         model.addAttribute("comments", comments);
-//        return "comment/comments";
-        return ResponseEntity.ok().body(comments);
+        return "comment/comments";
+//        return ResponseEntity.ok().body(comments);
     }
 
     /**

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class FirebaseServiceImpl implements FirebaseService{
+public class SignFirebaseServiceImpl implements SignFirebaseService {
     public static final String COLLECTION_NAME = "Users";
 
     // 회원 추가 로직

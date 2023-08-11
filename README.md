@@ -30,19 +30,19 @@
     <td align="center"><img src="https://avatars.githubusercontent.com/u/121299334?v=4" width="70"></td>
     <td width="200">문소희(<a href="https://github.com/soheetech" target="_blank">@soheetech</a>)<br>Back-End 구현</td>
     <td width="60" align="center">조장</td>
-    <td>DB 연결 및 초기 환경 세팅, 댓글(+댓글의 댓글) 작성/조회/삭제, 댓글 좋아요 기능 구현</td>
+    <td>DB 연결 및 초기 환경 세팅, 댓글 작성/조회/삭제, 댓글 좋아요 기능 구현, 파일 병합</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/58635833?v=4" width="70"></td>
     <td>박지국(<a href="https://github.com/parkjikuk" target="_blank">@parkjikuk</a>)<br>Front-End 구현</td>
     <td align="center">조원</td>
-    <td>Index(홈&추천피드) 페이지, 개인 피드 페이지(목록/작성/수정/삭제) 구현</td>
+    <td>Index(홈+추천피드) 페이지, 개인 피드 페이지 구현</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/62269067?v=4" width="70"></td>
     <td>이동규(<a href="https://github.com/LEE-Donggyu" target="_blank">@LEE-Donggyu</a>)<br>Back-End 구현</td>
     <td align="center">조원</td>
-    <td>개인 피드 CRUD, 추천 피드 조회, 게시물 좋아요 기능 구현</td>
+    <td>개인 피드 게시글 생성, 조회, 삭제 구현</td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/50459192?v=4" width="70"></td>
