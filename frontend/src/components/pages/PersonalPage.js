@@ -2,9 +2,19 @@ import React from 'react'
 import styles from './PersonalPage.module.css'
 import { FaUserCircle } from "react-icons/fa";
 import { AiOutlineSetting } from "react-icons/ai";
+import { PiSquaresFour, PiBookmarkSimpleLight, PiCameraThin} from "react-icons/pi";
+import { MdOutlinePersonPin } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { Footer } from '../Personal/Footer';
 
 export const PersonalPage = () => {
+  const images = [
+    // "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    // "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    // "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    // "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+  ];
+
   return (
     <div className={styles.personal_container}>
         <section className={styles.personal_wrapper}>
@@ -32,25 +42,45 @@ export const PersonalPage = () => {
                     </li>
                   </ul> 
 
-                  <div>
+                  <div className={styles.personal_comment}>
                     <span>안녕하세요</span>
                   </div>              
                 </section>
             </header>
 
             <div className={styles.user_actions}>
-              <a>게시물</a>
-              <a>저장됨</a>
-              <a>태그됨</a>
+              <a className={styles.user_actions_btn}>
+                <PiSquaresFour />
+                <span>게시물</span>
+              </a>
+              <a className={styles.user_actions_btn}>
+                <PiBookmarkSimpleLight />
+                <span>저장됨</span>
+              </a>
+              <a className={styles.user_actions_btn}>
+                <MdOutlinePersonPin />
+                <span>태그됨</span>
+              </a>
             </div>
 
-            <div className={styles.feed_container}>
-              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="고양이" /></div>
-              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="강아지" /></div>
-              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="사자" /></div>
-              <div className={styles.feed_image}><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="사자" /></div>
+            {images.length > 0 ? (
+              <div className={styles.feed_container}>
+              {images.map((imageUrl, index) => (
+                <div className={styles.feed_image} key={index}>
+                  < img src={imageUrl} alt="personal image" />
+                </div>
+              ))}
+              </div>
+            ) : (
+            <div className={styles.no_images}>
+              <PiCameraThin className={styles.no_images_icon}/>
+              <h1>사진 공유</h1>
+              <span>사진을 공유하면 회원님의 프로필이 표시됩니다.</span>
+              <button className={styles.add_image_btn}>첫 사진을 공유합니다.</button>
             </div>
+            )}
         </section>
+        <Footer />
     </div>
   )
 }

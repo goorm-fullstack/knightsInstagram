@@ -3,17 +3,25 @@
     flex-direction: column;
     align-items: center;
     width: 935px;
-    padding: 50px 20px 0 20px;
     margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .personal_wrapper {
     width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 935px;
+    padding-top: 30px;
+    flex-grow: 1;
 }
 
 .header {
     display: flex;
     margin-bottom: 44px;
+    height: 150px;
 }
 
 .user_profile {
@@ -30,20 +38,26 @@
 .header_btn {
     display: flex;
     align-items: center;
-    font-weight: bold;
     height: 40px;
     margin-bottom: 20px;
 }
 
+.header_btn span {
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .edit_btn {
     display: flex;
-    background-color: lightgray;
+    background-color: #EFEFEF;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     padding: 0 16px 0 16px;
-    height: 40px;
+    height: 32px;
     margin-left: 20px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .setting_btn {
@@ -53,8 +67,12 @@
 
 .user_info {
     display: flex;
-    font-weight: bold;
+    font-size: 16px;
     margin-bottom: 20px;
+}
+
+.user_info span {
+    font-weight: 600;
 }
 
 .user_info li:not(:last-child) {
@@ -65,7 +83,7 @@
     display: flex;
     justify-content: center;
     height: 52px;
-    border-top: 1px solid gray;
+    border-top: 1px solid #DBDBDB;
     align-items: center;
 }
 
@@ -93,6 +111,55 @@
     width: 100%;
     height: 100%;
 }
+
+.personal_comment span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user_actions_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.user_actions_btn span {
+    margin-left: 6px;
+}
+
+.no_images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 308px;
+}
+
+.no_images_icon {
+    width: 62px;
+    height: 62px;
+}
+
+.no_images h1 {
+    font-weight: 800;
+    font-size: 30px;
+    margin: 24px 0;
+}
+
+.no_images span {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.no_images button {
+    font-weight: 600;
+    font-size: 14px;
+    color : #0095F6;
+}
+
+
   
   
 
