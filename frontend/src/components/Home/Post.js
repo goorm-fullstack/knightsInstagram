@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import styles from './Post.module.css'
-import { BsThreeDots,BsHeart, BsBookmark, BsEmojiSmile } from 'react-icons/bs'
-import { AiOutlineMessage } from "react-icons/ai";
+import { BsThreeDots, BsHeart, BsBookmark, BsEmojiSmile, BsFillHeartFill } from 'react-icons/bs'
+import { AiOutlineMessage, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
 
 const Post = ({ username, imageURL, caption, userProfileURL }) => {
   const [comment, setcomment] = useState("");
   const [commnets, setComments] = useState([]);
+  const [commentLike, setCommentLike] = useState(false);
+  const [postLike, setPostLike] = useState(false);
 
   const handleComment = (e) => {
     setcomment(e.target.value)
@@ -20,23 +22,31 @@ const Post = ({ username, imageURL, caption, userProfileURL }) => {
     }
   };
 
+  const handleCommentLike = () => {
+    setCommentLike(!commentLike);
+  };
+
+  const handlePostLike = () => {
+    setPostLike(!postLike);
+  };
+
   return (
     <div className={styles.post}>
-      <div className={styles.userInfo}>
-        <img className={styles.profileImg} src={userProfileURL} alt="profile" />
+      <div className={styles.user_info}>
+        <img className={styles.profile_image} src={userProfileURL} alt="profile" />
         <div className={styles.postHeader}>
           <div className={styles.username}>{username}</div>
           <span>•</span>
-          <button className={styles.followBtn}>팔로우</button>
+          <button className={styles.follow_btn}>팔로우</button>
         </div>
         <BsThreeDots />
       </div>
       <img className={styles.postImg} src={imageURL} alt="Post" />
-      <div className={styles.btnWrapper}>
+      <div className={styles.btn_wrapper}>
         <div className={styles.buttons}>
-          <BsHeart />
+        {postLike ? <BsFillHeartFill onClick={handlePostLike} className={`${styles.heart_icon} ${styles.animateHeartbeat}`} /> : <BsHeart onClick={handlePostLike} />}
           <AiOutlineMessage />
-        < HiOutlinePaperAirplane />
+          <HiOutlinePaperAirplane />
         </div>
         <div>
           <BsBookmark className={styles.buttons} />
@@ -54,7 +64,10 @@ const Post = ({ username, imageURL, caption, userProfileURL }) => {
             <div>
               {comment}
             </div>
-            <button>삭제</button>
+            <div className={styles.comment_btn}>
+            {commentLike ? <AiFillHeart onClick={handleCommentLike} className={`${styles.heart_icon} ${styles.animateHeartbeat}`} /> : <AiOutlineHeart onClick={handleCommentLike} />}
+              <button className={styles.delete_btn}>삭제</button>
+            </div>
           </div>
         ))}
       </div>

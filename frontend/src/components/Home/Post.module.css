@@ -1,16 +1,17 @@
 .post {
+    width: 430px;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.userInfo {
+.user_info {
     display: flex;
     align-items: center;
     padding: 10px 0 10px 0;
 }
 
-.profileImg {
+.profile_image {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -24,7 +25,7 @@
     font-weight: bold;
 }
 
-.followBtn {
+.follow_btn {
     font-weight: bold;
     color : #0D9CF7;
 }
@@ -32,17 +33,21 @@
 .postImg {
     object-fit: cover;
     width: 100%;
+    height: 585px;
 }
 
-.btnWrapper {
+.btn_wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 10px 0;
+    align-items: center;
+    height: 40px;
+    padding-bottom: 6px;
 }
 
 .buttons {
     display: flex;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .buttons > * + * {
@@ -63,6 +68,37 @@
     display: flex;
     justify-content: space-between;
     padding: 5px;
+}
+
+.comment_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart_icon {
+    color: #FF2F40;
+    cursor: pointer;
+}
+
+.animateHeartbeat {
+  animation: heartbeat 0.3s linear;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.delete_btn {
+    margin-left: 10px;
 }
 
 .comment {
