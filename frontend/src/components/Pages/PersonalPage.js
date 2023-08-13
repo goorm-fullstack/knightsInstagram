@@ -5,7 +5,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { PiSquaresFour, PiBookmarkSimpleLight, PiCameraThin} from "react-icons/pi";
 import { MdOutlinePersonPin } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { Footer } from '../Personal/Footer';
+import { Footer } from '../Personal/footer';
 
 export const PersonalPage = () => {
   const images = [

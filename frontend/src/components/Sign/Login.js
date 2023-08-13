@@ -1,9 +1,37 @@
-import React from 'react'
-import "./Login.css"
+import React, {useState} from 'react';
+import "./Login.css";
+import {useNavigate} from "react-router-dom";
+import axios from "axios";
 
 function Login() {
 
   const backgroundImageUrl = "https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png";
+
+    const navigate = useNavigate();
+    const [credentials, setCredentials] = useState({
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setCredentials({ ...credentials, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post("http://localhost:8080/login", credentials);
+            if (response.data) {
+                console.log("User logged in:", response.data);
+                navigate('/home');
+            } else {
+                console.error("Login failed!");
+            }
+        } catch (error) {
+            console.error("An error occurred:", error);
+        }
+    };
 
   return (
     <div className="login_form">
@@ -31,7 +59,7 @@ function Login() {
 
      {/*아이디, 비밀번호 입력*/}
       <div className="_ab3a">
-        <form className="form" id="loginForm" method="post">
+        <form className="form" id="loginForm" method="post" onSubmit={handleSubmit}>
           <div className="input_form">
             <div className="_ab32">
              <div className="id">
@@ -46,9 +74,10 @@ function Login() {
                className="id_form"
                dir=""
                type="email"
-              //  value=""
-               name="username"
+               value={credentials.email}
+               name="email"
                placeholder='전화번호, 사용자 이름 또는 이메일'
+               onChange={handleChange}
              />
             </label>
              </div>
@@ -64,18 +93,17 @@ function Login() {
                 autoCorrect="off"
                 className="id_form"
                 type="password"
-                // value=""
+                value={credentials.password}
                 name="password"
                 placeholder='비밀번호'
+                onChange={handleChange}
               />
             </label>
              </div>
             </div>
              {/*로그인 버튼*/}
             <div class="login_btn">
-             <button class="btn" disabled="" type="submit">
-             <div class="btn_1">로그인</div>
-              </button>
+             <button class="btn" disabled="" type="submit"><span className="btn_1">로그인</span></button>
             </div>
             {/*중간선*/}
             <div class="_ab39">

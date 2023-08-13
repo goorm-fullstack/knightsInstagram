@@ -1,21 +1,40 @@
 import React, { useState, useRef } from 'react';
 import "./EditForm.css"
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import styles from "../Nav/Dropdown.module.css";
 
 const EditForm = () => {
   const [profileImage, setProfileImage] = useState('URL_OF_DEFAULT_IMAGE');
-  const [name, setName] = useState('');
-  const [gender, setGender] = useState('');
-  const [bio, setBio] = useState('');
-  const profileImgFileInput = useRef(null);
+  // const [name, setName] = useState('');
+  // const [gender, setGender] = useState('');
+  // const [bio, setBio] = useState('');
+  // const profileImgFileInput = useRef(null);
 
-  const handleImageChange = () => {
-    profileImgFileInput.current.click();
-  };
+    const { email } = useParams();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // 프로필 업데이트 로직 구현
-  };
+    const [user, setUser] = useState({
+        email: email,
+        password: "",
+        name: "",
+        // 추가 필드 등
+    });
+
+    // 입력 변경 핸들러
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setUser({ ...user, [name]: value });
+    };
+
+    // 프로필 업데이트 핸들러
+    const handleUpdate = async () => {
+        try {
+            const response = await axios.put("http://localhost:8080/updateUser", user);
+            console.log("User updated:", response.data);
+        } catch (error) {
+            console.error("An error occurred while updating:", error);
+        }
+    };
 
   const profileChange = (e) => {
     if (e.target.files[0]) {
@@ -73,24 +92,27 @@ const EditForm = () => {
      </div>
      <form className="_ab43" method="POST">
       <div className="_ab3p">
-       <aside class="_ad6_">
-        <label class="_ab3q" for="pepLinks">웹사이트</label>
-       </aside>
-       <div className="_ab3t">
-        <div div style={{ maxWidth: '355px', width: '100%' }} className="xjbqb8w">
-            <input
-            aria-required="false"
-            disabled
-            id="pepLinks"
-            placeholder="웹사이트"
-            className="_ab3_"
-            dir=""
-            type="text"
-            value=""
-          />
-        </div>
+          <table className='edit_form'>
+              <tr>
+                  <th>이메일</th>
+                  <td><label><input type="email" name="email" value={user.email} readOnly /></label></td>
+              </tr>
+              <tr>
+                  <th>비밀번호</th>
+                  <td><label><input type="password" name="password" placeholder="password" onChange={handleChange} required /></label></td>
+              </tr>
+              <tr>
+                  <th>이름</th>
+                  <td><label><input type="text" name="name" placeholder="name" onChange={handleChange} required /></label></td>
+              </tr>
+              <tr>
+                  <th>회원탈퇴</th>
+                  <td><a href='/delete'>탈퇴하기</a></td>
+              </tr>
+              {/* 추가 필드 입력 */}
+          </table>
        </div>
-       </div>
+       <button type="button" onClick={handleUpdate}>Update Profile</button>
      </form>
     </article>
     );

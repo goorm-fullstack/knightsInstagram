@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,6 +37,6 @@ public class PostController {
     public ResponseEntity<Object> comments(Model model) throws ExecutionException, InterruptedException {
         List<Post> posts = postService.getAllPosts();
         model.addAttribute("Post", posts);
-        return ResponseEntity.ok().body(posts);
+        return ResponseEntity.ok(posts);
     }
 }

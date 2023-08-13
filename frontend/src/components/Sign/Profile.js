@@ -103,7 +103,7 @@ function Profile () {
               <hr class="line"></hr>
             </div>
             <li>
-               <a class="menu1" href="/accounts/edit/" role="link">
+               <a class="menu1 selected" href="/accounts/edit/" role="link">
                 <div>
                   <div class="_ad7z">
                    <span class="menu2" dir="auto">프로필 편집</span>

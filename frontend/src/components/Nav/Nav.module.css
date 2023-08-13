@@ -1,6 +1,6 @@
 .navigation {
     display: flex;
-    width: 310px;
+    width: 335px;
     flex-direction: column;
     background-color: #fff;
     border-right: 1px solid #DBDBDB;
@@ -12,7 +12,7 @@
 
   .nav_wrapper {
     position: fixed;
-    width: 310px;
+    width: 300px;
     cursor: pointer;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './ProfileImageUploader.css'; 
 
 const ProfileImageUploader = () => {
   const [selectedImage, setSelectedImage] = useState(null);
