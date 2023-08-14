@@ -1,0 +1,121 @@
+.post {
+    width: 430px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.profile_image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.postHeader {
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+}
+
+.follow_btn {
+    font-weight: bold;
+    color : #0D9CF7;
+}
+
+.postImg {
+    object-fit: cover;
+    width: 100%;
+    height: 585px;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-bottom: 6px;
+}
+
+.buttons {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.buttons > * + * {
+    margin-left: 16px; 
+  }
+
+
+.postInfo {
+    padding: 5px 0;
+}
+
+.postUser {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.comment_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart_icon {
+    color: #FF2F40;
+    cursor: pointer;
+}
+
+.animateHeartbeat {
+  animation: heartbeat 0.3s linear;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.delete_btn {
+    margin-left: 10px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.commentInput {
+    flex: 1;
+}
+
+.commentBtn {
+    color: rgb(0, 149, 246);
+    font-weight: bold;
+    font-size: medium;
+    background-color: white;
+    margin: 0 8px;
+}

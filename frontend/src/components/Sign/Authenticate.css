@@ -1,0 +1,81 @@
+.authenticate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  border-width: 2px
+}
+
+.auth__right {
+  flex: 0.5;
+}
+
+.auth__more {
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 1px 0 10px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.auth__more > span {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+
+.auth__more > span > button {
+  background: 0;
+  border: 0;
+  font-weight: bolder;
+  color: #0095f6;
+}
+
+.auth__more > span > button:hover {
+  cursor: pointer;
+}
+
+.Download_container{
+ display: flex;
+ flex-direction: column;
+}
+
+.Download{
+  border: 0;
+  color: rgb(0,0,0);
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px 10px 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.app_download{
+display: block;
+overflow-x: visible;
+overflow-y: visible;
+position: relative;
+max-width: 100%;
+min-width: 0;
+white-space: pre-line;
+word-break: break-word;
+word-wrap: break-word;
+font-size: 14px;
+font-weight: 400;
+color: black;
+text-align: center;
+margin-top: 0 !important;
+margin-right: 0 !important;
+margin-bottom: 0 !important;
+margin-left: 0 !important;
+}

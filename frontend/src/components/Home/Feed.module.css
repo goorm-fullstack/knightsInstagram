@@ -1,0 +1,17 @@
+.feed {
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.post {
+    margin-right: 100px;
+    width: 100%;
+}
+
+.sideBar {
+    width: 320px;
+    min-width: 320px
+}
+

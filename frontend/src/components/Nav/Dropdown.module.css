@@ -1,0 +1,24 @@
+.menu {
+    width: 250px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    top: calc(100% - 440px);
+}
+
+.item {
+    padding: 12px;
+    margin: 4px 0;
+    
+}
+
+.item:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+    transition: background-color .3s;
+  }
